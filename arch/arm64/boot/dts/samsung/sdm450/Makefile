@@ -11,12 +11,6 @@ dtb-$(CONFIG_MACH_A6PLTE_SEA_OPEN) += sdm450-sec-a6plte_eur_open-r00.dtb \
 					sdm450-sec-a6plte_eur_open-r02.dtb \
 					sdm450-sec-a6plte_eur_open-r03.dtb \
 					sdm450-sec-a6plte_eur_open-r04.dtb		
-
-dtb-$(CONFIG_MACH_A6PLTE_MEA_OPEN) += sdm450-sec-a6plte_mea_open-r00.dtb \
-					sdm450-sec-a6plte_mea_open-r01.dtb \
-					sdm450-sec-a6plte_mea_open-r02.dtb \
-					sdm450-sec-a6plte_mea_open-r03.dtb \
-					sdm450-sec-a6plte_mea_open-r04.dtb		
 					
 dtb-$(CONFIG_MACH_A6PLTE_LTN_OPEN) += sdm450-sec-a6plte_ltn_open-r03.dtb \
                                         sdm450-sec-a6plte_ltn_open-r04.dtb
@@ -100,13 +94,6 @@ dtb-$(CONFIG_MACH_GTA2XLLTE_USA_VZW) += sdm450-sec-gta2xllte_usa_vzw-r00.dtb \
 					sdm450-sec-gta2xllte_usa_vzw-r04.dtb \
 					sdm450-sec-gta2xllte_usa_vzw-r05.dtb
 
-dtb-$(CONFIG_MACH_GTA2XLLTE_CAN_SINGLE) += sdm450-sec-gta2xllte_can_single-r00.dtb \
-					sdm450-sec-gta2xllte_can_single-r01.dtb \
-					sdm450-sec-gta2xllte_can_single-r02.dtb \
-					sdm450-sec-gta2xllte_can_single-r03.dtb \
-					sdm450-sec-gta2xllte_can_single-r04.dtb \
-					sdm450-sec-gta2xllte_can_single-r05.dtb
-
 dtb-$(CONFIG_MACH_GTA2XLLTE_MEA_OPEN) += sdm450-sec-gta2xllte_mea_open-r00.dtb \
 					sdm450-sec-gta2xllte_mea_open-r01.dtb \
 					sdm450-sec-gta2xllte_mea_open-r02.dtb \
@@ -121,44 +108,13 @@ dtb-$(CONFIG_MACH_GTA2XLLTE_MEA_TUR) += sdm450-sec-gta2xllte_mea_tur-r00.dtb \
 					sdm450-sec-gta2xllte_mea_tur-r04.dtb \
 					sdm450-sec-gta2xllte_mea_tur-r05.dtb
 
-dtb-$(CONFIG_MACH_GTA2XLWIFI_CHN_OPEN) += sdm450-sec-gta2xlwifi_chn_open-r00.dtb \
-					sda450-sec-gta2xlwifi_chn_open-r01.dtb \
-					sda450-sec-gta2xlwifi_chn_open-r02.dtb \
-					sda450-sec-gta2xlwifi_chn_open-r03.dtb \
-					sda450-sec-gta2xlwifi_chn_open-r04.dtb \
-                                        sda450-sec-gta2xlwifi_chn_open-r05.dtb
+dtb-$(CONFIG_MACH_GTA2XLWIFI_EUR_OPEN) += sdm450-sec-gta2xlwifi_eur_open-r02.dtb \
+					sda450-sec-gta2xlwifi_eur_open-r02.dtb \
+					sda450-sec-gta2xlwifi_eur_open-r03.dtb \
+					sda450-sec-gta2xlwifi_eur_open-r04.dtb \
+					sda450-sec-gta2xlwifi_eur_open-r05.dtb
 
 dtb-$(CONFIG_MACH_J6PLTE_CIS_SER) += sdm450-sec-j6plte_cis_ser-r00.dtb
-
-dtb-$(CONFIG_MACH_J8Y18LTE_CIS_SER) += sdm450-sec-j8y18lte_cis_ser-r00.dtb \
-					sdm450-sec-j8y18lte_cis_ser-r01.dtb \
-					sdm450-sec-j8y18lte_cis_ser-r02.dtb \
-					sdm450-sec-j8y18lte_cis_ser-r03.dtb
-					
-dtb-$(CONFIG_MACH_J8Y18LTE_SWA_OPEN) += sdm450-sec-j8y18lte_swa_open-r00.dtb \
-					sdm450-sec-j8y18lte_swa_open-r01.dtb \
-					sdm450-sec-j8y18lte_swa_open-r02.dtb \
-					sdm450-sec-j8y18lte_swa_open-r03.dtb
-					
-dtb-$(CONFIG_MACH_J8Y18LTE_SWA_INS) += sdm450-sec-j8y18lte_swa_ins-r00.dtb \
-					sdm450-sec-j8y18lte_swa_ins-r01.dtb \
-					sdm450-sec-j8y18lte_swa_ins-r02.dtb \
-					sdm450-sec-j8y18lte_swa_ins-r03.dtb
-
-dtb-$(CONFIG_MACH_J8Y18LTE_LTN_OPEN) += sdm450-sec-j8y18lte_ltn_open-r00.dtb \
-					sdm450-sec-j8y18lte_ltn_open-r01.dtb \
-					sdm450-sec-j8y18lte_ltn_open-r02.dtb \
-					sdm450-sec-j8y18lte_ltn_open-r03.dtb
-					
-dtb-$(CONFIG_MACH_J8Y18LTE_MEA_JV) += sdm450-sec-j8y18lte_mea_jv-r00.dtb \
-					sdm450-sec-j8y18lte_mea_jv-r01.dtb \
-					sdm450-sec-j8y18lte_mea_jv-r02.dtb \
-					sdm450-sec-j8y18lte_mea_jv-r03.dtb
-
-dtb-$(CONFIG_MACH_J8Y18LTE_SEA_OPEN) += sdm450-sec-j8y18lte_sea_open-r00.dtb \
-					sdm450-sec-j8y18lte_sea_open-r01.dtb \
-					sdm450-sec-j8y18lte_sea_open-r02.dtb \
-					sdm450-sec-j8y18lte_sea_open-r03.dtb
 
 ifeq ($(CONFIG_ARM64),y)
 always          := $(dtb-y)
