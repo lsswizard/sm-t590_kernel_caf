@@ -52,7 +52,7 @@
 #define MSM_CSID_DRV_NAME                    "msm_csid"
 
 #define DBG_CSID                             0
-#define SHORT_PKT_CAPTURE                    1
+#define SHORT_PKT_CAPTURE                    0
 #define SHORT_PKT_OFFSET                     0x200
 #define ENABLE_3P_BIT                        1
 #define SOF_DEBUG_ENABLE                     1

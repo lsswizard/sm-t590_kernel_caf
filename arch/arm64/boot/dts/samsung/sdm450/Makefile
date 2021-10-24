@@ -94,6 +94,13 @@ dtb-$(CONFIG_MACH_GTA2XLLTE_USA_VZW) += sdm450-sec-gta2xllte_usa_vzw-r00.dtb \
 					sdm450-sec-gta2xllte_usa_vzw-r04.dtb \
 					sdm450-sec-gta2xllte_usa_vzw-r05.dtb
 
+dtb-$(CONFIG_MACH_GTA2XLLTE_CAN_SINGLE) += sdm450-sec-gta2xllte_can_single-r00.dtb \
+					sdm450-sec-gta2xllte_can_single-r01.dtb \
+					sdm450-sec-gta2xllte_can_single-r02.dtb \
+					sdm450-sec-gta2xllte_can_single-r03.dtb \
+					sdm450-sec-gta2xllte_can_single-r04.dtb \
+					sdm450-sec-gta2xllte_can_single-r05.dtb
+
 dtb-$(CONFIG_MACH_GTA2XLLTE_MEA_OPEN) += sdm450-sec-gta2xllte_mea_open-r00.dtb \
 					sdm450-sec-gta2xllte_mea_open-r01.dtb \
 					sdm450-sec-gta2xllte_mea_open-r02.dtb \

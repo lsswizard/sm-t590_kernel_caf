@@ -24,6 +24,7 @@
 #include <linux/of.h>
 #include <linux/ratelimit.h>
 #include <linux/slab.h>
+#include <linux/suspend.h>
 
 #include <linux/sec_debug.h>
 
@@ -230,6 +231,23 @@ no_dt:
 	pr_info("use default keymap");
 }
 
+static int sec_crashkey_pm_notifier_call(struct notifier_block *nb,
+		unsigned long action, void *data)
+{
+	switch (action) {
+	case PM_SUSPEND_PREPARE:
+	case PM_POST_SUSPEND:
+		__crashkey_clear_received_pattern();
+		break;
+	}
+
+	return NOTIFY_DONE;
+}
+
+static struct notifier_block sec_crashkey_pm_notifier = {
+	.notifier_call = sec_crashkey_pm_notifier_call,
+};
+
 static int __init sec_crashkey_init(void)
 {
 	int err;
@@ -253,6 +271,8 @@ static int __init sec_crashkey_init(void)
 
 	sec_kn_register_notifier(&sec_crashkey_notifier,
 			carashkey_used_event, crashkey_nr_used_event);
+
+	register_pm_notifier(&sec_crashkey_pm_notifier);
 
 	return 0;
 }
